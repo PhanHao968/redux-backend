@@ -2,11 +2,16 @@ from fastapi import FastAPI
 from routes.sim_routes import sim_api_router
 from fastapi.middleware.cors import CORSMiddleware
 
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 app = FastAPI()
 
+
+LOCALHOST = os.getenv("LOCALHOST")
 origins = [
-    "redux-frontend.onrender.com",
+    LOCALHOST,
 ]
 app.add_middleware(
     CORSMiddleware,
