@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 origins = [
-    "http://localhost:3000",
+    "redux-frontend.onrender.com",
 ]
 app.add_middleware(
     CORSMiddleware,
