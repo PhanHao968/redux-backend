@@ -9,7 +9,7 @@ from schemas.sim_schemas import sims_serializer, sim_serializer, update_to_dict
 
 sim_api_router = APIRouter()
 
-@sim_api_router.get("/")
+@sim_api_router.get("/dashboard")
 async def get_sim():
     sims = sims_serializer(collection_name.find({"is_deleted": False}))
     return {"status":"Successfully", "data": sims}
