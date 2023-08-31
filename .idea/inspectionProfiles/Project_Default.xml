@@ -1,0 +1,14 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="flet.flet.app" />
+          <option value="flet.flet.WEB_BROWSER" />
+          <option value="tiktok.TiktokDownload.url_tiktok_textField" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
